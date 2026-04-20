@@ -1,0 +1,25 @@
+# Rust编译产物
+target/
+
+# IDE配置
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 备份文件
+*.bak
+*.tmp
+
+# OS文件
+.DS_Store
+Thumbs.db
+
+# 如果有环境变量文件
+.env
+.env.local
+
+# Cargo.lock - 应用程序通常提交，库项目忽略
+# 对于本项目，建议提交Cargo.lock以确保构建可重复
+# 如果不想提交，取消下面注释
+# Cargo.lock

@@ -1,0 +1,25 @@
+[package]
+name = "wechat-comments-cli"
+version = "1.0.0"
+edition = "2021"
+description = "微信公众号留言管理CLI工具 (Rust版本)"
+authors = []
+
+[[bin]]
+name = "wechat-comments"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+aes-gcm = "0.10"
+base64 = "0.21"
+rand = "0.8"
+dirs = "5.0"
+
+[profile.release]
+opt-level = 3
+lto = true
